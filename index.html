@@ -1,0 +1,85 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Sudoku</title>
+	<script type="text/javascript" src="src/lib.js"></script>
+	<script type="text/javascript" src="src/Board.js"></script>
+	<script type="text/javascript" src="src/Filler.js"></script>
+	<script type="text/javascript" src="src/main.js"></script>
+	<link rel="stylesheet" href="main.css" />
+</head>
+<body>
+	<div id="main">
+		<h1>Sudoku</h1>
+		<div id="container" style="float:left;"></div>
+		<div class="right">
+			<div id="nextNumberContainer">
+				Next Number to Play:
+				<div id="nextNumber"></div>
+			</div>
+			<h3>
+				Play instructions:
+			</h3>
+			<ol>
+				<li>
+					Fill the board
+				</li>
+				<li>
+					Make holes in the board
+				</li>
+				<li>
+					Select a number to play by pressing 1-9 on your keyboard
+				</li>
+				<li>
+					Click the square on the board where you want to place the number
+				</li>
+				<li>
+					Repeat steps 3 and 4 until you solve the puzzle
+				</li>
+			</ol>
+		</div>
+		<div class="right">
+			<h3>
+				Utilities:
+			</h3>
+			<table class="btn-table">
+				<tr>
+					<td>
+						<button id="fillBtn">Fill</button>
+					</td>
+					<td>
+						Fills the board with a canned solution
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<button id="randomFillBtn">Random Fill</button>
+					</td>
+					<td>
+						Fills the board with a random, procedurally-generated solution (may take multiple attempts)
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<button id="makeHolesBtn">Make Holes</button>
+					</td>
+					<td>
+						 Turns a solution into an actual puzzle
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<button id="makeHolesByGroupBtn">Make Holes By Group</button>
+					</td>
+					<td>
+						Turns a solution into an actual puzzle (more evenly)
+						<br>
+						<label>Puzzle Difficulty:</label> <span id="difficultyContainer"></div>
+					</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+</body>
+</html>
